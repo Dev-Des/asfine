@@ -1,0 +1,27 @@
+html {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+&::-webkit-scrollbar {
+	display: none;
+}
+.asfine {
+	position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99;
+	width: 13px;
+	height: 23px;
+	left: 5px;
+	bottom: -25px;
+	fill: #2a2a3e;
+	transition: 0.5s;
+}
+.asfine.show {
+	visibility: visible;
+	cursor: pointer;
+	opacity: 1;
+	bottom: 45px;
+}
